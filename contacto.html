@@ -27,24 +27,33 @@
             <input type="text" name="" id="nombreAP">
 
             <label for="correoElectronico">Correo Electronico: </label>
-            <input type="email" name="" id="correoElectronico">
+            <input class="input-padre" type="email" name="" id="correoElectronico">
 
             <label for="numeroTel">Numero telefonico</label>
-            <input type="tel" name="" id="numeroTel">
+            <input class="input-padre" type="tel" name="" id="numeroTel">
 
             <label for="mensaje">Mensaje: </label>
-            <textarea name="" id="mensaje" cols="62" rows="10"></textarea>
+            <textarea class="input-padre" name="" id="mensaje" cols="62" rows="10"></textarea>
 
             <p>¿Como le gustaria que lo contactemos?</p>
 
-            <label for="radio-email">Email</label>
-            <input type="radio" name="contacto" id="radio-email" value="email">
+            <div>
+                <label for="radio-email">
+                    <input type="radio" name="contacto" id="radio-email" value="email">Email
+                </label>
+    
+                <label for="radio-telefono">
+                    <input type="radio" name="contacto" id="radio-telefono" value="telefono">Telefono
+                </label>
+    
+                <label for="radio-whatspapp">
+                    <input type="radio" name="contacto" id="radio-whatspapp" value="whatsapp">WhatsApp
+                </label>
+            </div>
 
-            <label for="radio-telefono">Telefono</label>
-            <input type="radio" name="contacto" id="radio-telefono" value="telefono">
-
-            <label for="radio-whatspapp">WhatsApp</label>
-            <input type="radio" name="contacto" id="radio-whatspapp" value="whatsapp">
+            <label class="checkbox">
+                <input type="checkbox" name="" id="">¿Le gustaria recibir novedades de la barberia Alura?
+            </label>
 
             <input type="submit" value="submit">
         </form>
