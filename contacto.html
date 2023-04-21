@@ -1,75 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Contacto</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="caja-nav">
-            <h1><img src="img/logo.png" alt="logo basberstore"></h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="barbershop.html">PRODUCTOS</a></li>
-                    <li><a href="contacto.html">CONTACTO</a></li>
-                </ul>
-            </nav>
-        </div>
+      <div class="caja-nav">
+        <h1><img src="img/logo.png" alt="logo basberstore" /></h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="barbershop.html">PRODUCTOS</a></li>
+            <li><a href="contacto.html">CONTACTO</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
-        <form action="">
-            <label for="nombreAP">Nombre y Apellidos: </label>
-            <input type="text" name="" id="nombreAP" required>
+      <form action="">
+        <label for="nombreAP">Nombre y Apellidos: </label>
+        <input type="text" name="" id="nombreAP" required />
 
-            <label for="correoElectronico">Correo Electronico: </label>
-            <input class="input-padre" type="email" name="" id="correoElectronico" placeholder="example@gmail.com" required>
+        <label for="correoElectronico">Correo Electronico: </label>
+        <input
+          class="input-padre"
+          type="email"
+          name=""
+          id="correoElectronico"
+          placeholder="example@gmail.com"
+          required
+        />
 
-            <label for="numeroTel">Numero telefonico</label>
-            <input class="input-padre" type="tel" name="" id="numeroTel" placeholder="Example: (XXX) XXX XX XX" required>
+        <label for="numeroTel">Numero telefonico</label>
+        <input
+          class="input-padre"
+          type="tel"
+          name=""
+          id="numeroTel"
+          placeholder="Example: (XXX) XXX XX XX"
+          required
+        />
 
-            <label for="mensaje">Mensaje: </label>
-            <textarea class="input-padre" name="" id="mensaje" cols="62" rows="10" required></textarea>
+        <label for="mensaje">Mensaje: </label>
+        <textarea
+          class="input-padre"
+          name=""
+          id="mensaje"
+          cols="62"
+          rows="10"
+          required
+        ></textarea>
 
-            
-            <fieldset>
-                <legend>¿Como le gustaria que lo contactemos?</legend>
-                <label for="radio-email">
-                    <input type="radio" name="contacto" id="radio-email" value="email">Email
-                </label>
-    
-                <label for="radio-telefono">
-                    <input type="radio" name="contacto" id="radio-telefono" value="telefono">Telefono
-                </label>
-    
-                <label for="radio-whatspapp">
-                    <input type="radio" name="contacto" id="radio-whatspapp" checked value="whatsapp">WhatsApp
-                </label>
-            </fieldset>
+        <fieldset>
+          <legend>¿Como le gustaria que lo contactemos?</legend>
+          <label for="radio-email">
+            <input
+              type="radio"
+              name="contacto"
+              id="radio-email"
+              value="email"
+            />Email
+          </label>
 
-            <fieldset>
-                <legend>¿En cual horario desea ser atendido?</legend>
-                <select>
-                    <option>Mañana</option>
-                    <option>Tarde</option> 
-                    <option>Noche</option>
-                </select>
-            </fieldset>
+          <label for="radio-telefono">
+            <input
+              type="radio"
+              name="contacto"
+              id="radio-telefono"
+              value="telefono"
+            />Telefono
+          </label>
 
-            <label class="checkbox">
-                <input type="checkbox" checked name="" id="">¿Le gustaria recibir novedades de la barberia Alura?
-            </label>
+          <label for="radio-whatspapp">
+            <input
+              type="radio"
+              name="contacto"
+              id="radio-whatspapp"
+              checked
+              value="whatsapp"
+            />WhatsApp
+          </label>
+        </fieldset>
 
-            <input class="enviar" type="submit" value="submit">
-        </form>
+        <fieldset>
+          <legend>¿En cual horario desea ser atendido?</legend>
+          <select>
+            <option>Mañana</option>
+            <option>Tarde</option>
+            <option>Noche</option>
+          </select>
+        </fieldset>
+
+        <label class="checkbox">
+          <input type="checkbox" checked name="" id="" />¿Le gustaria recibir
+          novedades de la barberia Alura?
+        </label>
+
+        <input class="enviar" type="submit" value="submit" />
+      </form>
+      <table>
+        <thead>
+          <!--<tr> -> table rows (filas)-->
+          <tr>
+            <!--<th> -> encabezado de la tabla-->
+            <th>Dia</th>
+            <th>horario</th>
+          </tr>
+        </thead>
+        <!--<tbody> -> cuerpo de la tabla-->
+        <tbody>
+          <tr>
+            <td>Lunes</td>
+            <td>08h ~ 20h</td>
+          </tr>
+          <tr>
+            <td>Miercoles</td>
+            <td>08h ~ 20h</td>
+          </tr>
+          <tr>
+            <td>Viernes</td>
+            <td>08h ~ 20h</td>
+          </tr>
+        </tbody>
+      </table>
     </main>
     <footer>
-        <img src="img/logo-blanco.png" alt="logo blanco barberia">
-        <p class="copyright">Copyright Barberia Alura - 2023</p>
+      <img src="img/logo-blanco.png" alt="logo blanco barberia" />
+      <p class="copyright">Copyright Barberia Alura - 2023</p>
     </footer>
-</body>
+  </body>
 </html>
