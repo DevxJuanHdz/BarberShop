@@ -96,7 +96,8 @@ main {
 form {
     margin: 40px 0;
 }
-form label, form p {
+
+form label, form legend {
     display: block;
     font-size: 20px;
     margin: 0 0 10px;
@@ -111,4 +112,29 @@ form label, form p {
 
 .checkbox {
     margin: 20px 0;
+}
+
+/*JERARQUIA DE CSS
+
+    Los selectores por ID tiene mas peso:               (1er Lugar)
+    Los selectores por Clase la mitad del peso:         (2do Lugar)
+    Los selectores por Etiqueta peso de 1(hipotetico)   (3er Lugar)
+
+*/
+
+.enviar {
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: orange;
+    border: none;
+    border-radius: 5px;
+    transition: 1s background;
+    cursor: pointer;
+}
+
+.enviar:hover{
+    background: darkorange;
 }
